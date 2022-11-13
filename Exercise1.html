@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <h1> Exercise 1: Password Validator</h1>
+  </head>
+  <body>
+	<a href="./index.html">Home</a><br><br>
+    First Password:  <input type="password" id="pass1" value=""> <br>
+    Second Password: <input type="password" id="pass2" value=""> <br>
+
+
+    <button onclick="validate()">Validate your password</button> <br>
+	
+	
+	<script>
+	function validate() {
+		var pass1 = document.getElementById("pass1").value;
+		var pass2 = document.getElementById("pass2").value;
+
+		if (pass1.length < 8) {
+			alert("The length of the first password is less than 8 letters!")
+		} else if (pass2.length < 8) {
+			alert("The length of the second password is less than 8 letters!")
+		} else if (pass1 != pass2) {
+			alert("The two passwords do not match!")
+		} else {
+			alert("Validated! The passwords match.")
+		}
+
+	}
+	</script>
+	
+  </body>
+</html>

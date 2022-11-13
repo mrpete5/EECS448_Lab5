@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <h1> Exercise 4: CSS Manipulation</h1>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="functions.js"></script>
+  </head>
+  <body>
+	<a href="./index.html">Home</a>
+	<div class="container"> </div>
+  
+		<p id="paragraph" class="ridge">
+		“We live in a society exquisitely dependent on science and technology, 
+		in which hardly anyone knows anything about science and technology.” – Carl Sagan
+		<br>
+		“An expert is a person who has made all the mistakes that can be made in a very narrow field.” – Neils Bohr
+		<br>
+		“The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.” – Isaac Asimov
+		<br>
+		</p>
+
+	<form>
+	  <h3>Border Color</h3>
+      R Value (0-255):
+      <input type="text" id="border_R" value><br>
+      G Value (0-255):
+      <input type="text" id="border_G" value><br>
+      B Value (0-255):
+      <input type="text" id="border_B" value><br>
+
+	  <h3>Background Color</h3>
+      R Value (0-255):
+      <input type="text" id="bg_R" value><br>
+      G Value (0-255):
+      <input type="text" id="bg_G" value><br>
+      B Value (0-255):
+      <input type="text" id="bg_B" value><br>
+	  <br>
+      Border Width:
+      <input type="text" id="border_width" value><br><br>
+      <button type="button" onclick="paragraph_color()">
+      Change CSS Properties
+      </button>
+    </form>
+
+  </body>
+</html>

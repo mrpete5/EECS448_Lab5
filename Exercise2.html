@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <h1> Exercise 2: Slide Show</h1>
+  </head>
+  <body>
+	<a href="./index.html">Home</a><br><br>
+    <div class="w3-content w3-display-container">
+	  <img class="mySlides" alt="Two puppies sleeping" src="picture/0.jpeg" width="300" height="300">
+      <img class="mySlides" alt="Puppy laying on a towel giving puppy dog eyes" src="picture/1.jpeg" width="300" height="300">
+      <img class="mySlides" alt="Two puppies sitting in a field" src="picture/2.jpeg" width="300" height="300">
+      <img class="mySlides" alt="Puppy looking up at something off screen" src="picture/3.jpeg" width="300" height="300">
+      <img class="mySlides" alt="Puppy sitting on rocks, looking up at camera" src="picture/4.jpeg" width="300" height="300">
+    
+      <button name="previous" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">previous</button>
+      <button name="next" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">next</button>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+    </script>
+	  
+  </body>
+</html>
